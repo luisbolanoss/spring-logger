@@ -1,4 +1,4 @@
-package com.labs.logger.services;
+package com.labs.logger.entities;
 
 public class Foo {
 

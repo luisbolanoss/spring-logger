@@ -1,14 +1,14 @@
-package com.labs.logger;
+package com.labs.logger.configuration;
 
-import com.labs.logger.performancemonitor.FooAspect;
-import com.labs.logger.services.Foo;
+import com.labs.logger.aspect.FooAspect;
+import com.labs.logger.entities.Foo;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.EnableAspectJAutoProxy;
 
 @Configuration
 @EnableAspectJAutoProxy
-public class ConfigBean {
+public class FooConfiguration {
 
   @Bean
   public Foo foo() {

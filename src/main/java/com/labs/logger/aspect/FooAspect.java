@@ -1,4 +1,4 @@
-package com.labs.logger.performancemonitor;
+package com.labs.logger.aspect;
 
 import org.aspectj.lang.ProceedingJoinPoint;
 import org.aspectj.lang.annotation.Around;
@@ -12,7 +12,7 @@ public class FooAspect {
   Logger logger = LoggerFactory.getLogger(FooAspect.class);
 
 
-  @Around("execution(* com.labs.logger.services.Foo.*(..))")
+  @Around("execution(* com.labs.logger.entities.Foo.*(..))")
   public Object measureMethod(ProceedingJoinPoint pjp) throws Throwable
   {
     StopWatch sw = new StopWatch();
